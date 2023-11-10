@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Khang Tran Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Khang Tran
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          khangminh1472001@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1(520)808-3876
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendation">Recommendation</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://camo.githubusercontent.com/8bf6f6d78abc81fcf9c49f10649423e73ea44bc248e83aaae8759d401c829a84/68747470733a2f2f70687973696373677572756b756c2e66696c65732e776f726470726573732e636f6d2f323031392f30322f6368617261637465722d312e676966" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Khang Tran!
+          </h1>
+          <p>
+            I am a Rising Senior at the University of Arizona, pursuing Computer Science.
+            I am driven by a passion for utilizing technology to overcome complex challenges. 
+            I am learning to become a Back-End Developer. In my free time, you can find me  
+            hanging out with my family, at the gym, and watching Netflix.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/java.png"/>
+          <h4>Java</h4>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/C.jpg"/>
+          <h4>C</h4>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/py.png"/>
+          <h4>Python</h4>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h4>HTML</h4>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h4>CSS</h4>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/js.jpeg"/>
+            <h4>JavaScript</h4>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h4>Node.js</h4>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/ex.png"/>
+            <h4>Express</h4>
+          </div>  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Paint</h3>
+            <ul>
+              <li>Collaboratively developed by a team of four using a shared Github repository to develop a drawing tool akin to Microsoft Paint using Java and JavaFX</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Cashless Jukebox</h3>
+            <ul>
+              <li>Developed a digital Jukebox that allows users to create accounts and play songs using Java and JavaFX</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Tic Tac Toe</h3>
+            <ul>
+              <li>Created a Tic Tac Toe game that allows user to play against an intermediate AI or easy AI using Java and JavaFX</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Khang's innovation and team spirit make him an indispensable asset.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for your recommendation</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
